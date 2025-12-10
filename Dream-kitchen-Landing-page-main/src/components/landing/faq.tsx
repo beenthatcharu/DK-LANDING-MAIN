@@ -41,33 +41,23 @@ export function Faq() {
   return (
     <section id="faq" className="py-16 sm:py-24 bg-background">
       <div className="container max-w-3xl mx-auto px-4">
-        
-        {/* Heading */}
         <div className="text-center mb-12">
           <h3 className="text-3xl md:text-4xl font-headline font-bold">
             Quick Answers to <span className="text-primary">Your Questions</span>
           </h3>
         </div>
-
-        {/* Accordion */}
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
-            <AccordionItem
-              key={index}
-              value={`item-${index}`}
-              className="border-b-0"   // 🚀 Removes the unwanted horizontal line
-            >
+            <AccordionItem key={index} value={`item-${index}`}>
               <AccordionTrigger className="text-lg font-headline text-left">
                 {faq.question}
               </AccordionTrigger>
-
               <AccordionContent className="text-base text-foreground/80">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
-
       </div>
     </section>
   );

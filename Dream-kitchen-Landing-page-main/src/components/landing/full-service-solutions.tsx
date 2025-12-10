@@ -25,8 +25,11 @@ const solutions = [
     description:
       'End-to-end project execution for a cohesive, beautifully designed home.',
   },
+ 
+ 
 ];
 
+// ⭐ Normalize IDs to avoid mismatches (THIS FIXES THE ERROR)
 const normalize = (str = '') =>
   str.toLowerCase().replace(/[^a-z0-9]/g, '');
 
@@ -35,7 +38,7 @@ export function FullServiceSolutions() {
     const placeholder =
       PlaceHolderImages.find(
         (img) => normalize(img.id) === normalize(solution.id)
-      ) || {};
+      ) || {}; // ⭐ fallback ensures nothing is undefined
 
     return { ...solution, ...placeholder };
   });
@@ -56,7 +59,7 @@ export function FullServiceSolutions() {
           {solutionImages.map((solution, index) => (
             <div
               key={solution.id ?? solution.title ?? index}
-              className="group rounded-lg border border-border border-b-0 bg-background overflow-hidden"
+              className="group rounded-lg border border-border bg-background overflow-hidden"
             >
               <div className="relative aspect-video w-full overflow-hidden">
                 {solution.imageUrl ? (
@@ -68,6 +71,7 @@ export function FullServiceSolutions() {
                     data-ai-hint={solution.imageHint}
                   />
                 ) : (
+                  // fallback UI so React never crashes
                   <div className="w-full h-full bg-muted flex items-center justify-center text-foreground/60 text-sm">
                     Image coming soon
                   </div>

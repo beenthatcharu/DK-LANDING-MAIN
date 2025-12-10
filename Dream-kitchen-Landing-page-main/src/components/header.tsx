@@ -45,26 +45,15 @@ export function Header() {
         </nav>
 
         <div className="flex items-center justify-end space-x-4">
-
-          {/* 🔥 CLICKABLE PHONE (Desktop) */}
-          <a 
-            href="tel:+919403893424"
-            className="hidden lg:block text-sm font-medium text-black mr-2 hover:underline"
-          >
+          {/* Added Phone Number for Desktop */}
+          <span className="hidden lg:block text-sm font-medium text-black mr-2">
             +91 9403893424
-          </a>
+          </span>
+          
+          <Button asChild className="hidden sm:inline-flex">
+            <Link href="#consultation-form">Book Consultation</Link>
+          </Button>
 
-          {/* 🔥 Book Consultation → WhatsApp */}
-          <a
-            href="https://wa.me/919403893424"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex bg-primary text-white px-4 py-2 rounded-md font-medium"
-          >
-            Book Consultation
-          </a>
-
-          {/* Mobile Menu */}
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
@@ -76,7 +65,6 @@ export function Header() {
 
               <SheetContent side="left">
                 <div className="flex flex-col space-y-6 pt-10">
-
                   {navLinks.map((link) => (
                     <Link
                       key={link.href}
@@ -88,31 +76,23 @@ export function Header() {
                     </Link>
                   ))}
 
-                  {/* 🔥 CLICKABLE PHONE (Mobile) */}
-                  <a 
-                    href="tel:+919403893424"
-                    className="text-lg font-medium text-black py-2 underline"
-                  >
-                    +91 9403893424
-                  </a>
+                  {/* Added Phone Number for Mobile Menu */}
+                  <div className="text-lg font-medium text-black py-2">
+                    +91 78950 92061
+                  </div>
 
-                  {/* 🔥 WhatsApp CTA (Mobile) */}
-                  <a
-                    href="https://wa.me/919403893424"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Button
+                    asChild
                     onClick={() => setIsSheetOpen(false)}
-                    className="bg-primary text-white px-4 py-3 rounded-md text-center font-medium"
+                    className="w-full"
                   >
-                    Book Consultation
-                  </a>
-
+                    <Link href="#consultation-form">Book Consultation</Link>
+                  </Button>
                 </div>
               </SheetContent>
 
             </Sheet>
           </div>
-
         </div>
       </div>
     </header>
