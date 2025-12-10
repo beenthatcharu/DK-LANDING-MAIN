@@ -3,62 +3,52 @@
     {
       "id": "hero-image",
       "description": "A modern and elegant living room interior.",
-      "imageUrl": "https://images.unsplash.com/photo-1646987916641-1f3c8992daa2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtb2Rlcm4lMjBpbnRlcmlvcnxlbnwwfHx8fDE3NjMxODg0MTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765349211/ChatGPT_Image_Dec_10_2025_12_15_10_PM_x8lade.png",
       "imageHint": "modern interior"
     },
-    {
-      "id": "living-room",
-      "description": "A spacious living room with comfortable seating.",
-      "imageUrl": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsaXZpbmclMjByb29tfGVufDB8fHx8MTc2MzI2MjM1OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "living room"
-    },
-    {
-      "id": "bedroom",
-      "description": "A cozy bedroom with elegant design.",
-      "imageUrl": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiZWRyb29tJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYzMjc0NDIwfDA&ixlib_rb-4.1.0&q=80&w=1080",
-      "imageHint": "bedroom interior"
-    },
+   
+  
     {
       "id": "wardrobe",
-      "description": "A modern walk-in wardrobe with smart storage.",
-      "imageUrl": "https://res.cloudinary.com/ds4jns6xy/image/upload/v1763444094/pexels-pixabay-271722_ggkqnz.jpg",
+      "description": "Modular wardrobes with premium finishes and thoughtful storage.",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765349644/ChatGPT_Image_Dec_10_2025_12_20_17_PM_vjkjde.png",
       "imageHint": "modern wardrobe"
     },
     {
       "id": "entertainment-unit",
-      "description": "Dramatic panel structures, integrated ambient lighting, and bold architectural elements that redefine the visual impact of your entertainment unit.",
-      "imageUrl": "https://res.cloudinary.com/ds4jns6xy/image/upload/v1763535159/pexels-houzlook-3423817_ash8rg.jpg",
+      "description": "Designer units with smart lighting, clean structure, and premium finishes.",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765349378/ChatGPT_Image_Dec_10_2025_12_02_26_PM_f8xlxp.png",
       "imageHint": "Entertainment Unit"
     },
     {
-      "id": "bathroom-vanity",
-      "description": "A modern bathroom with premium fixtures and a relaxing ambiance.",
-      "imageUrl": "https://res.cloudinary.com/ds4jns6xy/image/upload/v1763535717/pexels-fotoaibe-1571462_x8gf88.jpg",
-      "imageHint": "modern bathroom vanity"
+      "id": "bathroom-Vanities",
+      "description": "Moisture-proof, stylish, and built for everyday use.",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765348200/ChatGPT_Image_Dec_10_2025_11_56_24_AM_jsk1yc.png",
+      "imageHint": "modern bathroom Vanities"
     },
     {
       "id": "kitchen-1",
       "description": "A modern kitchen with light wood cabinets and a large island.",
-      "imageUrl": "https://images.unsplash.com/photo-1682888813913-e13f18692019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2Rlcm4lMjBraXRjaGVufGVufDB8fHx8MTc2MzIyNDA1N3ww&ixlib_rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765346993/ChatGPT_Image_Dec_10_2025_11_37_40_AM_snmeti.png",
       "imageHint": "modern kitchen"
     },
     {
       "id": "kitchen-2",
-      "description": "A sleek, contemporary kitchen with dark cabinetry and integrated appliances.",
-      "imageUrl": "https://res.cloudinary.com/ds4jns6xy/image/upload/v1763443978/modular_cubk4i.jpg",
+      "description": "Modern light-wood kitchen with clean lines",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765346502/ChatGPT_Image_Dec_10_2025_11_30_40_AM_vsqdnt.png",
       "imageHint": "modular kitchen"
     },
     {
       "id": "kitchen-3",
-      "description": "A bright kitchen with white cabinets and a wooden countertop.",
-      "imageUrl": "https://images.unsplash.com/photo-1669046222569-a7672da06e12?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmlnaHQlMjBraXRjaGVufGVufDB8fHx8MTc2MzE5MTQwMnww&ixlib_rb-4.1.0&q=80&w=1080",
+      "description": "Bright white laminate kitchen with warm wooden counters",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765346161/ChatGPT_Image_Dec_10_2025_11_23_15_AM_xq1vot.png",
       "imageHint": "bright kitchen"
     },
     {
-      "id": "complete-home",
-      "description": "A beautiful and cohesive living space, showcasing an end-to-end interior design.",
-      "imageUrl": "https://res.cloudinary.com/ds4jns6xy/image/upload/v1763444273/pexels-falling4utah-1080721_tbwxwo.jpg",
-      "imageHint": "complete home"
+      "id": "complete-home solutions",
+      "description": "End-to-end project execution for a cohesive, beautifully designed home.",
+      "imageUrl": "https://res.cloudinary.com/dtc8bbbco/image/upload/v1765349046/ChatGPT_Image_Dec_10_2025_12_12_01_PM_cstfun.png",
+      "imageHint": "complete home solutions"
     }
   ]
 }

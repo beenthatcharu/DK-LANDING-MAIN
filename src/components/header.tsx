@@ -19,8 +19,9 @@ export function Header() {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-white backdrop-blur supports-[backdrop-filter]:bg-white/80">
       <div className="container flex h-20 items-center justify-between max-w-full px-4 sm:px-8">
+        
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
             src="https://res.cloudinary.com/dtc8bbbco/image/upload/v1765193669/logo2_cueg8i_h6hnt5.png"
@@ -36,7 +37,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-foreground/80 transition-colors hover:text-primary"
+              className="text-black/80 transition-colors hover:text-primary"
             >
               {link.label}
             </Link>
@@ -45,7 +46,7 @@ export function Header() {
 
         <div className="flex items-center justify-end space-x-4">
           {/* Added Phone Number for Desktop */}
-          <span className="hidden lg:block text-sm font-medium text-foreground mr-2">
+          <span className="hidden lg:block text-sm font-medium text-black mr-2">
             +91 9403893424
           </span>
           
@@ -61,6 +62,7 @@ export function Header() {
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
+
               <SheetContent side="left">
                 <div className="flex flex-col space-y-6 pt-10">
                   {navLinks.map((link) => (
@@ -68,15 +70,17 @@ export function Header() {
                       key={link.href}
                       href={link.href}
                       onClick={() => setIsSheetOpen(false)}
-                      className="text-lg font-medium text-foreground/80 transition-colors hover:text-primary"
+                      className="text-lg font-medium text-black/80 transition-colors hover:text-primary"
                     >
                       {link.label}
                     </Link>
                   ))}
+
                   {/* Added Phone Number for Mobile Menu */}
-                  <div className="text-lg font-medium text-foreground py-2">
+                  <div className="text-lg font-medium text-black py-2">
                     +91 78950 92061
                   </div>
+
                   <Button
                     asChild
                     onClick={() => setIsSheetOpen(false)}
@@ -86,6 +90,7 @@ export function Header() {
                   </Button>
                 </div>
               </SheetContent>
+
             </Sheet>
           </div>
         </div>
