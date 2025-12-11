@@ -9,9 +9,9 @@ const solutions = [
       'Modular wardrobes with premium finishes and thoughtful storage.',
   },
   {
-    id: 'Bathroom Vanities',
-    title: 'Bathroom Vanities',
-    description: 'Moisture-proof, stylish, and built for everyday use.',
+    id: 'Bedroom Interiors',
+    title: 'Bedroom Interiors',
+    description: 'Calming, elegant, and thoughtfully designed for everyday comfort.',
   },
   {
     id: 'Entertainment Units',
