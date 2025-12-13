@@ -1,10 +1,11 @@
 import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 export function Footer() {
   return (
     <footer id="contact" className="bg-background py-16 sm:py-24">
       <div className="container mx-auto px-4 text-center space-y-6">
-        
+
         {/* Heading */}
         <h3 className="text-3xl md:text-4xl font-headline font-bold">
           Ready to Build Your Premium{' '}
@@ -21,9 +22,9 @@ export function Footer() {
           </span>
           <br />
 
-          {/* CLICKABLE PHONE */}
+          {/* CALL ONLY */}
           <span className="text-foreground/70">
-            Call / WhatsApp:{' '}
+            Call :{' '}
             <a
               href="tel:+919403893424"
               className="font-semibold text-primary underline"
@@ -33,28 +34,21 @@ export function Footer() {
           </span>
         </p>
 
-        {/* WHATSAPP BUTTONS */}
+        {/* CTA BUTTONS */}
         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
 
-          {/* Button 1 */}
-          <a
-            href="https://wa.me/919403893424"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary text-white px-6 py-3 rounded-lg font-medium shadow-lg text-center"
-          >
-            REQUEST A PERSONALIZED QUOTE
-          </a>
+          <Button size="lg" asChild>
+            <Link href="#consultation-form">
+              REQUEST A PERSONALIZED QUOTE
+            </Link>
+          </Button>
 
-          {/* Button 2 */}
-          <a
-            href="https://wa.me/919403893424"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="border border-primary text-primary px-6 py-3 rounded-lg font-medium shadow-lg text-center"
-          >
-            SCHEDULE A SITE VISIT
-          </a>
+          <Button size="lg" variant="outline" asChild>
+            <Link href="#consultation-form">
+              SCHEDULE A SITE VISIT
+            </Link>
+          </Button>
+
         </div>
       </div>
 

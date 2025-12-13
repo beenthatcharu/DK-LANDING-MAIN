@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
+const PHONE_NUMBER = '+91 9403893424';
+const WHATSAPP_NUMBER = '919403893424';
+
 export function Hero() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-image');
 
@@ -9,6 +12,7 @@ export function Hero() {
       id="home"
       className="relative w-full flex items-center justify-center text-center text-white overflow-hidden py-20 sm:py-24 md:py-32"
     >
+      {/* Background Image */}
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -20,7 +24,7 @@ export function Hero() {
         />
       )}
 
-      {/* Background Overlay */}
+      {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative z-10 container max-w-6xl grid md:grid-cols-2 gap-8 md:gap-16 items-center px-4">
@@ -41,17 +45,18 @@ export function Hero() {
             <br />
             Contact us at{' '}
             <a
-              href="tel:+917052431111"
+              href="tel:+919403893424"
               className="underline font-semibold text-primary"
             >
-              +91 70524 31111
+              {PHONE_NUMBER}
             </a>
           </p>
 
-          {/* CTA BUTTONS → WhatsApp */}
+          {/* CTA BUTTONS */}
           <div className="flex flex-wrap gap-4 pt-4">
+            {/* WhatsApp */}
             <a
-              href="https://wa.me/917052431111"
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium shadow-lg"
@@ -59,8 +64,9 @@ export function Hero() {
               Chat on WhatsApp
             </a>
 
+            {/* Free Consultation */}
             <a
-              href="https://wa.me/917052431111"
+              href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-black hover:bg-gray-200 px-6 py-3 rounded-lg font-medium shadow-lg"
