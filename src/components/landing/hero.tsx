@@ -12,7 +12,7 @@ export function Hero() {
       id="home"
       className="relative w-full flex items-center justify-center text-center text-white overflow-hidden py-20 sm:py-24 md:py-32"
     >
-      {/* Background Image */}
+      
       {heroImage && (
         <Image
           src={heroImage.imageUrl}
@@ -24,12 +24,12 @@ export function Hero() {
         />
       )}
 
-      {/* Dark Overlay */}
+      
       <div className="absolute inset-0 bg-black/50" />
 
       <div className="relative z-10 container max-w-6xl grid md:grid-cols-2 gap-8 md:gap-16 items-center px-4">
         
-        {/* LEFT CONTENT */}
+        
         <div className="text-left space-y-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-headline font-bold tracking-tight text-shadow-lg">
             Premium Modular Designs
@@ -52,9 +52,9 @@ export function Hero() {
             </a>
           </p>
 
-          {/* CTA BUTTONS */}
+          
           <div className="flex flex-wrap gap-4 pt-4">
-            {/* WhatsApp */}
+            
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
@@ -64,7 +64,7 @@ export function Hero() {
               Chat on WhatsApp
             </a>
 
-            {/* Free Consultation */}
+            
             <a
               href={`https://wa.me/${WHATSAPP_NUMBER}`}
               target="_blank"
@@ -76,7 +76,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* RIGHT SIDE EMPTY (FORM REMOVED) */}
+        
         <div className="hidden md:block"></div>
       </div>
     </section>

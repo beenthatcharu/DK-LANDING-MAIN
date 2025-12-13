@@ -22,14 +22,14 @@ const faqs = [
       'We use HDHMR, soft-close hardware, and high-quality laminates, acrylic, and PU finishes.',
   },
 
-  // ⭐ NEW FAQ 1 (added)
+  
   {
     question: 'Is after-sales support provided?',
     answer:
       'Yes, our in-house team handles installation, service, and long-term support.',
   },
 
-  // ⭐ NEW FAQ 2 (added)
+  
   {
     question: 'Can you work within tight budgets?',
     answer:
@@ -42,20 +42,20 @@ export function Faq() {
     <section id="faq" className="py-16 sm:py-24 bg-background">
       <div className="container max-w-3xl mx-auto px-4">
         
-        {/* Heading */}
+      
         <div className="text-center mb-12">
           <h3 className="text-3xl md:text-4xl font-headline font-bold">
             Quick Answers to <span className="text-primary">Your Questions</span>
           </h3>
         </div>
 
-        {/* Accordion */}
+        
         <Accordion type="single" collapsible className="w-full">
           {faqs.map((faq, index) => (
             <AccordionItem
               key={index}
               value={`item-${index}`}
-              className="border-b-0"   // 🚀 Removes the unwanted horizontal line
+              className="border-b-0"   
             >
               <AccordionTrigger className="text-lg font-headline text-left">
                 {faq.question}

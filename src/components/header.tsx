@@ -46,7 +46,7 @@ export function Header() {
 
         <div className="flex items-center justify-end space-x-4">
 
-          {/* 🔥 CLICKABLE PHONE (Desktop) */}
+        
           <a 
             href="tel:+919403893424"
             className="hidden lg:block text-sm font-medium text-black mr-2 hover:underline"
@@ -54,7 +54,7 @@ export function Header() {
             +91 9403893424
           </a>
 
-          {/* 🔥 Book Consultation → WhatsApp */}
+          
           <a
             href="https://wa.me/919403893424"
             target="_blank"
@@ -64,7 +64,7 @@ export function Header() {
             Book Consultation
           </a>
 
-          {/* Mobile Menu */}
+          
           <div className="md:hidden">
             <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
               <SheetTrigger asChild>
@@ -88,7 +88,7 @@ export function Header() {
                     </Link>
                   ))}
 
-                  {/* 🔥 CLICKABLE PHONE (Mobile) */}
+              
                   <a 
                     href="tel:+919403893424"
                     className="text-lg font-medium text-black py-2 underline"
@@ -96,7 +96,7 @@ export function Header() {
                     +91 9403893424
                   </a>
 
-                  {/* 🔥 WhatsApp CTA (Mobile) */}
+                  
                   <a
                     href="https://wa.me/919403893424"
                     target="_blank"
